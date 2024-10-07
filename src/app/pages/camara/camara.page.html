@@ -1,0 +1,10 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>camara</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="takePicture()">Tomar Foto</ion-button>
+  <img *ngIf="imagen"[src]="" alt="sin imagen" style="height: 250px; width: 250px;">
+</ion-content>

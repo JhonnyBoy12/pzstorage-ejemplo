@@ -1,0 +1,7 @@
+{
+  "name": "pstorage",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

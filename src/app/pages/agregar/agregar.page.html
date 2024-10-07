@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>agregar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input label="Titulo de la noticia" labelPlacement="floating" placeholder="Ingrese un titulo" [(ngModel)]="titulo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Texto de la noticia" labelPlacement="floating" placeholder="Ingrese un texto" [(ngModel)]="texto"></ion-input>
+  </ion-item>
+  <ion-button color="success" (click)="agregar()">Agregar Noticia</ion-button>
+  <ion-button color="warning" [routerLink]="['/listar']">Ir a Página Listar</ion-button>
+</ion-content>
