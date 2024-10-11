@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>api</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item-sliding *ngFor="let x of post">
+      <ion-item>
+        <h3>{{ x.id }}</h3>
+        <ion-label>{{ x.body }}</ion-label>
+        <ion-label>{{x.text}}</ion-label>
+      </ion-item>
+    </ion-item-sliding>
+
+  </ion-list>
+</ion-content>

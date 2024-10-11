@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'camara',
+    redirectTo: 'api',
     pathMatch: 'full'
   },
   {
@@ -31,6 +31,11 @@ const routes: Routes = [
     path: 'camara',
     loadChildren: () => import('./pages/camara/camara.module').then( m => m.CamaraPageModule)
   },
+  {
+    path: 'api',
+    loadChildren: () => import('./pages/api/api.module').then( m => m.ApiPageModule)
+  },
+
 ];
 
 @NgModule({
